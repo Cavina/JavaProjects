@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="447.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="enrolledTable" layoutX="241.0" layoutY="14.0" prefHeight="100.0" prefWidth="331.0">
+        <columns>
+          <TableColumn fx:id="enrollIDColStudent" prefWidth="75.0" text="Enrollment ID" />
+          <TableColumn fx:id="sectionIDColStudent" prefWidth="75.0" text="Section ID" />
+          <TableColumn fx:id="courseNumColStudent" prefWidth="75.0" text="Course Number" />
+            <TableColumn fx:id="courseNameColStudent" prefWidth="105.0" text="Course Name" />
+        </columns>
+      </TableView>
+      <HBox layoutX="14.0" layoutY="44.0" prefHeight="41.0" prefWidth="254.0">
+         <children>
+            
+            <Label prefHeight="17.0" prefWidth="63.0" text="Student ID:" />
+            <TextField fx:id="studentIDField" prefHeight="25.0" prefWidth="137.0" />
+         </children>
+      </HBox>
+      <ButtonBar layoutX="241.0" layoutY="382.0" prefHeight="40.0" prefWidth="91.0">
+        <buttons>
+          <Button fx:id="enrollButton" mnemonicParsing="false" text="Enroll" />
+        </buttons>
+      </ButtonBar>
+      <TableView fx:id="courseTable" layoutX="14.0" layoutY="255.0" prefHeight="127.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="courseIDColCourse" prefWidth="75.0" text="Course ID" />
+          <TableColumn fx:id="sectionIDColCourse" prefWidth="75.0" text="Section ID" />
+            <TableColumn fx:id="courseNameColCourse" prefWidth="87.0" text="Course Name" />
+            <TableColumn fx:id="deptColCourse" prefWidth="93.0" text="Department" />
+            <TableColumn fx:id="professorNameColCourse" prefWidth="115.0" text="Professor" />
+            <TableColumn fx:id="semesterColCourse" prefWidth="75.0" text="Semester" />
+            <TableColumn fx:id="yearColCourse" prefWidth="32.0" text="Year" />
+            <TableColumn fx:id="descrColCourse" prefWidth="145.0" text="Description" />
+        </columns>
+      </TableView>
+      <HBox fx:id="courseHBox" layoutX="14.0" layoutY="203.0" prefHeight="41.0" prefWidth="317.0">
+         <children>
+            <ComboBox fx:id="semesterBox" prefWidth="150.0" promptText="Semester" />
+            <ComboBox fx:id="yearBox" prefWidth="150.0" promptText="Year" />
+            <ComboBox fx:id="deptBox" prefWidth="150.0" promptText="Department" />
+         </children>
+      </HBox>
+      <Button fx:id="unenrollButton" layoutX="149.0" layoutY="85.0" mnemonicParsing="false" text="Disenroll" />
+      <ButtonBar layoutX="361.0" layoutY="194.0" prefHeight="40.0" prefWidth="91.0">
+         <buttons>
+            <Button fx:id="searchButton" mnemonicParsing="false" text="Search" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
