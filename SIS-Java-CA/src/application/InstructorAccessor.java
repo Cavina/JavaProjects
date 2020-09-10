@@ -26,7 +26,7 @@ public class InstructorAccessor {
 	
 		try {
 			connection = DriverManager
-			.getConnection("jdbc:mysql://localhost:3306/schoolsystem","root", "Million6901");
+			.getConnection("jdbc:mysql://localhost:3306/schoolsystem","root", "your-pw-here");
 
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
